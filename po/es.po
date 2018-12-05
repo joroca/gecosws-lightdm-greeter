@@ -7,89 +7,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lightdm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-15 17:37-0400\n"
+"POT-Creation-Date: 2018-12-05 10:30+0100\n"
 "PO-Revision-Date: 2014-08-06 17:02+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2015-05-03 05:55+0000\n"
 "X-Generator: Launchpad (build 17474)\n"
-"Language: es\n"
 
-#: ../src/lightdm-gtk-greeter.c:708
-msgid "Unlock"
-msgstr "Desbloquear"
-
-#: ../src/lightdm-gtk-greeter.c:710 ../src/lightdm-gtk-greeter.glade.h:8
-msgid "Log In"
-msgstr "Acceder"
-
-#: ../src/lightdm-gtk-greeter.c:1079
-msgid "Failed to start session"
-msgstr "Fallo al iniciar sesión"
-
-#: ../src/lightdm-gtk-greeter.c:1254
-msgid "Other"
-msgstr "Alguien más"
-
-#: ../src/lightdm-gtk-greeter.c:1266 ../src/lightdm-gtk-greeter.c:1852
-msgid "Guest Session"
-msgstr "Sesión de invitado"
-
-#: ../src/lightdm-gtk-greeter.c:1479
-msgid "Incorrect password, please try again"
-msgstr "Contraseña incorrecta, inténtelo de nuevo"
-
-#: ../src/lightdm-gtk-greeter.c:1483
-msgid "Failed to authenticate"
-msgstr "Fallo al autenticar"
-
-#: ../src/lightdm-gtk-greeter.c:1526
-#, c-format
+#: ../src/lightdm-gtk-greeter.c:475
 msgid "Warning: There are still %d users logged in."
 msgstr "Aviso: todavía hay %d usuarios con la sesión iniciada."
 
-#: ../src/lightdm-gtk-greeter.c:1528
-#, c-format
-msgid "Warning: There is still %d user logged in."
-msgstr "Aviso: todavía hay %d usuario con la sesión iniciada."
-
-#: ../src/lightdm-gtk-greeter.c:1540 ../src/lightdm-gtk-greeter.glade.h:9
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../src/lightdm-gtk-greeter.c:1579
+#: ../src/lightdm-gtk-greeter.c:1845
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: ../src/lightdm-gtk-greeter.c:1579
+#: ../src/lightdm-gtk-greeter.c:1846
 msgid "Are you sure you want to close all programs and restart the computer?"
 msgstr ""
 "¿Está seguro de que quiere cerrar todos los programas y reiniciar el equipo?"
 
-#: ../src/lightdm-gtk-greeter.c:1594
+#: ../src/lightdm-gtk-greeter.c:1854
 msgid "Shut Down"
 msgstr "Apagar"
 
-#: ../src/lightdm-gtk-greeter.c:1594
-msgid ""
-"Are you sure you want to close all programs and shut down the computer?"
+#: ../src/lightdm-gtk-greeter.c:1855
+msgid "Are you sure you want to close all programs and shut down the computer?"
 msgstr ""
 "¿Está seguro de que quiere cerrar todos los programas y apagar el equipo?"
 
-#: ../src/lightdm-gtk-greeter.c:1860
+#: ../src/lightdm-gtk-greeter.c:1869
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#: ../src/lightdm-gtk-greeter.c:1871 ../src/lightdm-gtk-greeter.glade.h:15
+msgid "Log In"
+msgstr "Acceder"
+
+#: ../src/lightdm-gtk-greeter.c:2027
+msgid "Failed to start session"
+msgstr "Fallo al iniciar sesión"
+
+#: ../src/lightdm-gtk-greeter.c:2157
+msgid "Other"
+msgstr "Alguien más"
+
+#: ../src/lightdm-gtk-greeter.c:2174 ../src/lightdm-gtk-greeter.c:2490
+msgid "Guest Session"
+msgstr "Sesión de invitado"
+
+#: ../src/lightdm-gtk-greeter.c:2371
+msgid "Incorrect password, please try again"
+msgstr "Contraseña incorrecta, inténtelo de nuevo"
+
+#: ../src/lightdm-gtk-greeter.c:2378
+msgid "Failed to authenticate"
+msgstr "Fallo al autenticar"
+
+#: ../src/lightdm-gtk-greeter.c:2498
 msgid "Other..."
 msgstr "Otros…"
-
-#: ../src/lightdm-gtk-greeter.c:2513 ../src/lightdm-gtk-greeter.c:2520
-msgid "Enter your password"
-msgstr "Escriba su contraseña"
-
-#: ../src/lightdm-gtk-greeter.c:2514 ../src/lightdm-gtk-greeter.c:2521
-msgid "Enter your username"
-msgstr "Escriba su nombre de usuario"
 
 #: ../src/lightdm-gtk-greeter.glade.h:1
 msgid "Suspend"
@@ -118,3 +99,34 @@ msgstr "Contraste alto"
 #: ../src/lightdm-gtk-greeter.glade.h:7
 msgid "On Screen Keyboard"
 msgstr "Teclado en pantalla"
+
+#: ../src/lightdm-gtk-greeter.glade.h:8
+msgid "Screen Reader"
+msgstr "Teclado en pantalla"
+
+#: ../src/lightdm-gtk-greeter.glade.h:9
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../src/lightdm-gtk-greeter.glade.h:10
+msgid "OK"
+msgstr ""
+
+#: ../src/lightdm-gtk-greeter.glade.h:11
+msgid "Enter your username"
+msgstr "Escriba su nombre de usuario"
+
+#: ../src/lightdm-gtk-greeter.glade.h:12
+msgid "Enter your password"
+msgstr "Escriba su contraseña"
+
+#: ../src/lightdm-gtk-greeter.glade.h:13
+msgid "username"
+msgstr "Usuario"
+
+#: ../src/lightdm-gtk-greeter.glade.h:14
+msgid "password"
+msgstr "Contraseña"
+
+#~ msgid "Warning: There are still %d users logged in."
+#~ msgstr "Aviso: todavía hay %d usuarios con la sesión iniciada."
