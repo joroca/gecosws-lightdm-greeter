@@ -8,7 +8,8 @@ override_dh_auto_configure:
 		--disable-silent-rules \
 		--enable-kill-on-sigterm \
 		--disable-Werror \
-		--enable-libindicator
+		--enable-libindicator \
+		--enable-maintainer-mode
 
 override_dh_install:
 	dh_install debian/60-lightdm-gtk-greeter.conf usr/share/lightdm/lightdm.conf.d/

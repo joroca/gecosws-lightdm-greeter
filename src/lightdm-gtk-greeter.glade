@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.4"/>
   <requires lib="greeter_menu_bar" version="1.0"/>
   <object class="GtkAccelGroup" id="a11y_accelgroup"/>
-  <object class="GtkAccelGroup" id="power_accelgroup"/>
   <object class="GtkEventBox" id="panel_window">
     <property name="name">panel_window</property>
     <property name="visible">True</property>
@@ -182,6 +181,7 @@
       <class name="osd"/>
     </style>
   </object>
+  <object class="GtkAccelGroup" id="power_accelgroup"/>
   <object class="GtkEventBox" id="power_window">
     <property name="name">power_window</property>
     <property name="can_focus">False</property>
@@ -339,6 +339,9 @@
           <placeholder/>
         </child>
       </object>
+      <packing>
+        <property name="index">-1</property>
+      </packing>
     </child>
     <style>
       <class name="lightdm-gtk-greeter"/>
@@ -427,7 +430,7 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
+                    <property name="left_attach">2</property>
                     <property name="top_attach">0</property>
                   </packing>
                 </child>
@@ -442,7 +445,7 @@
                     <signal name="key-press-event" handler="username_key_press_cb" swapped="no"/>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
+                    <property name="left_attach">2</property>
                     <property name="top_attach">1</property>
                   </packing>
                 </child>
@@ -463,9 +466,53 @@
                     <signal name="key-press-event" handler="password_key_press_cb" swapped="no"/>
                   </object>
                   <packing>
+                    <property name="left_attach">2</property>
+                    <property name="top_attach">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label1">
+                    <property name="width_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="margin_top">12</property>
+                    <property name="hexpand">True</property>
+                    <property name="xpad">6</property>
+                    <property name="label" translatable="yes" comments="This is a placeholder string and will be replaced with a message from PAM">username</property>
+                    <property name="justify">right</property>
+                    <property name="xalign">1</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label2">
+                    <property name="width_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="margin_bottom">12</property>
+                    <property name="xpad">5</property>
+                    <property name="label" translatable="yes" comments="This is a placeholder string and will be replaced with a message from PAM">password</property>
+                    <property name="justify">right</property>
+                    <property name="xalign">1</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                  <packing>
                     <property name="left_attach">1</property>
                     <property name="top_attach">2</property>
                   </packing>
+                </child>
+                <child>
+                  <placeholder/>
                 </child>
               </object>
             </child>
