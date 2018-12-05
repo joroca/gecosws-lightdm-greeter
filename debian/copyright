@@ -1,0 +1,39 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: lightdm-gtk-greeter
+Upstream-Source: https://launchpad.net/lightdm-gtk-greeter
+
+Files: *
+Copyright: Sean Davis
+License: GPL-3
+
+Files: debian/*
+Copyright: © 2010-2018 Yves-Alexis Perez <corsac@debian.org>
+License: GPL-2
+
+Files: ltmain.sh
+Copyright: 1996-2015, Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: src/lightdm-gtk-greeter.c
+Copyright: 2010-2011, Robert Ancell.
+License: GPL-3+
+
+License: GPL-2
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-3+
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3'.
