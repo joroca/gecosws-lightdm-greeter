@@ -1,0 +1,5 @@
+gecosws-lightdm-greeter (1.0.0-0gecos1) bionic; urgency=medium
+
+  * New .glade file. username/password labels added to login box.
+
+ -- Jose M. Rodriguez <jmrodriguez@gruposolutia.com>  Tue, 20 Mar 2018 05:53:31 -0400
