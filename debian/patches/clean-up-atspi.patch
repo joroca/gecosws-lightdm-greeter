@@ -1,0 +1,27 @@
+Index: lightdm-gtk-greeter-2.0.1/src/lightdm-gtk-greeter.c
+===================================================================
+--- lightdm-gtk-greeter-2.0.1.orig/src/lightdm-gtk-greeter.c
++++ lightdm-gtk-greeter-2.0.1/src/lightdm-gtk-greeter.c
+@@ -2614,7 +2614,11 @@ main (int argc, char **argv)
+     g_setenv ("GDK_CORE_DEVICE_EVENTS", "1", TRUE);
+ 
+     /* LP: #1366534 */
++    #ifdef AT_SPI_COMMAND
++    spawn_line_pid (AT_SPI_COMMAND, G_SPAWN_SEARCH_PATH, NULL);
++    #else
+     g_setenv ("NO_AT_BRIDGE", "1", TRUE);
++    #endif
+ 
+     /* Initialize i18n */
+     setlocale (LC_ALL, "");
+@@ -2743,10 +2747,6 @@ main (int argc, char **argv)
+         g_free (value);
+     }
+ 
+-    #ifdef AT_SPI_COMMAND
+-    spawn_line_pid (AT_SPI_COMMAND, G_SPAWN_SEARCH_PATH, NULL);
+-    #endif
+-
+     #ifdef INDICATOR_SERVICES_COMMAND
+     spawn_line_pid (INDICATOR_SERVICES_COMMAND, G_SPAWN_SEARCH_PATH, NULL);
+     #endif

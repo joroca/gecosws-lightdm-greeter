@@ -1,0 +1,2 @@
+rm_conffile /etc/lightdm/lightdm-gtk-greeter-ubuntu.conf 2.0.1-2ubuntu3
+rm_conffile /etc/lightdm/lightdm-gtk-greeter.conf.d/01_ubuntu.conf 2.0.1-2ubuntu3

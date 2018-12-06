@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if dpkg-maintscript-helper supports mv_conffile; then
+  dpkg-maintscript-helper mv_conffile \
+    /etc/lightdm/lightdm-gtk-greeter-ubuntu.conf \
+    /etc/lightdm/lightdm-gtk-greeter.conf.d/01_ubuntu.conf \
+    2.0.1-1ubuntu1 -- "$@"
+fi
+
+#DEBHELPER#
+
+exit 0
