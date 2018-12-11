@@ -1,4 +1,4 @@
-Source: lightdm-gtk-greeter
+Source: gecosws-lightdm-greeter
 Section: x11
 Priority: optional
 Maintainer: Alfonso de Cala <alfonso.cala@juntadeandalucia.es>
