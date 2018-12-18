@@ -3,6 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Alfonso de Cala <alfonso.cala@juntadeandalucia.es>
 Build-Depends: debhelper (>= 9),
+               exo-utils,
                autotools-dev,
                libido3-0.1-dev,
                intltool,
